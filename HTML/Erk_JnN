@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de fondo</title>
+</head>
+<body style="background-image: url('ruta/a/tu-imagen.jpg');">
+    <h1>Encabezado</h1>
+    <p>Este es un párrafo.</p>
+</body>
+</html>
