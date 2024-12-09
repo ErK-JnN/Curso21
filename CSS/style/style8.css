@@ -1,0 +1,121 @@
+/*
+
+comentarios en css 
+
+selector global *
+selector de etiqueta o generico <etiqueta> 0.0.1
+selector de id: #id 1.0.0
+selector de clase: .clase 0.1.0
+
+ejemplo de selector global prioridad mas baja
+
+box-sizing: border-box;
+para mejor visualizacion en android y pc
+*/
+
+/* selector de etiqueta o generico*/
+p {
+
+    color: blueviolet;
+}
+
+/*selector de id*/
+/* # para los id*/
+/* # especifico por lo tanto tiene prioridad*/
+
+#parrafo-1 {
+
+    color: red;
+}
+
+
+/* . para las clases y es mas especifico que la seleccion
+de etiquetas.*/
+
+.item {
+    background-color: blue
+    color white
+}
+
+/* multiples clases*/
+.primero {
+    color: red;
+}
+
+
+/* . para clases
+# para id
+
+
+/* convinaciones de selectores */
+
+/*comninacion de selectores*/
+
+div nav h3 {
+    color:coral
+}
+
+.contenedor #navegacion .encapsulado {
+    color: green
+}
+
+/* aumentar el tamaño de las letras */
+.lista li {
+    font-size: large;
+}
+
+/*propiedades mas importantes*/
+/* !important*/
+.main {
+    /*esfocado al elemento*/
+    width: 500px; /* ancho imagenes*/
+    /* unidades absolutas: px, cm, mm*/
+    /*unidades relativas: em, rem, %, 
+    vw: porcentaje de ancho, vh: porcentaje de alto 
+    
+    Se aconseja que se coloque las tres para imagenes
+    [medidas relativas]
+    width: 60vw ancho
+    
+    [medidas absolutas]
+    min-width: 400px ancho minimo
+    max-width: 800px ancho maximo
+
+    Se aconseja que se coloque las tres  para imagenes
+    [medidas relativas]
+    height: 80vh alto   partes responsivas: para telefonos, tablet tv
+
+    [medidas absolutas]
+    min-height: 400px alto minimo
+    max-height: 800px alto maximo
+    */ 
+    
+
+
+    height: 500px; /* alto. imagenes*/
+    background-color: darkslategray; /*color de fondo*/
+    padding: 100px 200px; /* para centrar, mover el espacio al rededor del contenido*/
+    /*padding-left: ; /*relleno a la izquierda*/
+    /*padding-top: ; /* relleno arriba*/
+    /*padding-bottom: ; /* relleno abajo*/
+    /*padding-right: ; /* relleno a la derecha*/
+
+
+    margin: 200px; /* para centrar, mover... el espacio al rededor del elemento. El primero representa arriba y abajo y la segunda coma a los lados*/
+    /*margin-left: ; /* margen izquierdo*/
+    /*margin-top: ; /* margen arriba*/
+    /*margin-right: ; /* margen a la derecha*/
+    /*margin-bottom: ; /* margen abajo*/
+
+
+
+    /*enfocado al texto de elementos internos*/
+    color: darkcyan; /*color de letras*/
+    font-size: 32px; /*tamaño de letras*/
+    text-align: center; /*alineacion del texto*/
+} 
+
+
+
+
+
