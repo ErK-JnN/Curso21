@@ -10,23 +10,18 @@
 }
 
 body {
-
-    /*margin-left: 0;*/
     background-color: transparent;
 }
 
 
 * {
     padding: 0;
-
     margin: 0;
-
-    /* overflow: hidden; */
-
-
 }
 
 .menu{
+    position: fixed;
+    width: 100%;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -40,6 +35,7 @@ body {
     display: flex;
     align-items: center;
     margin: -19px;
+    margin-top: 50px;
 
 
 }
@@ -50,13 +46,9 @@ body {
 p {
     background-color: rgba(255, 255, 255, 0.945);
 }
-
-
 a {
     text-decoration: none;
 }
-
-
 .contenedor-menu {
     background-image: url(./../../HTML/img/todo\ mini.png);
     width: 1000px;
@@ -69,7 +61,6 @@ a {
     border-radius: 32px;
     box-shadow: 0 0 24px black;
     border: 2px solid black;
-
 }
 
 .titulo {
@@ -96,8 +87,6 @@ a {
     flex-direction: column;
     align-items: center;
     padding: rem 0;
-    /* background-color: black; */
-
 }
 
 .noticias {
@@ -105,11 +94,6 @@ a {
     grid-template-columns: repeat(2,auto);
     gap: 2rem;
     list-style-type: none;
-    /* background-image: url(./../img/dem.webp);
-    background-position: center;
-
-    background-repeat: no-repeat; */
-    /* background-size: cover; */
 
 }
 
@@ -122,9 +106,6 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-
-
-
 }
 
 .contenedor img {
@@ -132,12 +113,10 @@ a {
     width: 550px;
     border-radius: 45px;
     box-shadow: 0 0 24px black;
-
 }
 
 .contenedor h2 {
     font-size: 0.8rem;
-
 }
 
 .contenedor p {
@@ -148,8 +127,6 @@ a {
       padding-right: 40px;
       padding-bottom: 10px ;
       border-radius: 30px;
-
-
 }
 
 .contenedorr img{
@@ -167,9 +144,6 @@ a {
       padding-right: 40px;
       padding-bottom: 10px ;
       border-radius: 30px;
-
-
-
 }
 
 .contenedorr a {
@@ -193,15 +167,14 @@ a {
       padding-bottom: 5px ;
       border-radius: 30px;
 }
-/*./../img/mejorada.jpg*/
+
 .ned {
     background-image: url(./../img/mejorada.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed; /* fijar imagen de fondo*/
+    background-position: center; /*coloca la imagen de fondo en el centro del área del elemento */
+    background-repeat: no-repeat; /*evita que la imagen de fondo se repita dentro del área del elemento.*/
+    background-size: cover; /*se utiliza para asegurarse de que la imagen de fondo cubra completamente el área del elemento*/
     padding: 100px;
-
 }
 
 .final-0 {
@@ -209,43 +182,26 @@ a {
     padding: 36px 0 180px;
     color: white;
     display: flex;
-
     justify-content: center;
-    /* flex-direction: column; */
     font-size: 13px;
     font-family: SupercellText-Medium, Helvetica, Arial, sans-serif;
 }
 
 .final-1 {
     width: 1024px;
-
 }
-
-
-
 .final-4 {
     display: flex;
     gap: 18px;
     justify-content: space-between;
     padding-bottom: 2rem;
-
 }
-
-
-
-.final-6 {
-    /* width: 59px; */
-    /* height: 49%; */
-
-}
-
 .svg {
     gap: 1.5rem;
     display: flex;
     align-items: center;
 
 }
-
 .follow {
     padding: 10px 0 20px;
     font-size: 15px;
@@ -254,24 +210,13 @@ a {
 
 .icono {
     width: 40px;
-    /* padding: 0px 0 48px; */
-    /* border: 2px solid white; */
     object-fit: contain;
-
-
-
 }
-
-.instagram {
-    /* height: 50px; */
-}
-
 .terminos {
     display: flex;
     padding-top: 30px;
     padding-bottom: 60px;
 }
-
 .ul {
     list-style: none;
     padding-left: 0;
@@ -279,7 +224,6 @@ a {
     gap: 24px;
     font-size: 13px;
     margin: 0;
-
 }
 
 .links {
@@ -293,7 +237,6 @@ a {
     color: rgba(255, 255, 255, 0.562);
     font-style: normal;
 }
-
 
 .direction {
     display: flex;

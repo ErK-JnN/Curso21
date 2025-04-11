@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --c1: #03346c;
+    --c2: #f2f2f2;
+}
+@font-face {
+    font-family: Inclusive;
+    src: url(./Fonts/Inclusive.ttf)
+}
+
+body,html {
+    font-family: Inclusive,sans-serif!important;
+    margin: 0
+}
+body{
+    position: relative;
+    background-color: var(--c2);
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.nav {
+    position: sticky;
+    top: 0;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(170, 183, 253);
+    align-items: center;
+    height: 15vh;
+    padding: 0.5rem;
+    
+
+}
+.menu-desplegable {
+    display: none;
+    position:absolute;
+    flex-direction: column;
+    background-color: var(--c2);
+    align-items: center;
+    border-radius: 10px;
+    top: 1.9rem;
+    right: 0;
+    width: 60vw;
+    
+    
+}
+.logo-zamora{
+    height: 2.1rem;
+}
+
+.opciones {
+    font-size: 70%;
+    align-self: flex-start;
+    padding-left: 11px;
+    padding-top: 11px;
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    
+}
+
+.login {
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    margin-right: 5px;
+    
+}
+
+.boton {
+   width: 45px;
+   display: flex;
+   padding-left: 15px;
+}
+
+.opciones-dos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    gap: 0.5rem;
+    
+}
+
+.blanco {
+    font-size: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c2);
+    text-decoration: none;  
+    border-radius: 10px;
+    background-color: var(--c1);
+    padding: 8px 6px;
+    gap: 0.5rem;
+    
+}
+.interaccion {
+    position: relative;
+}
+
+.interaccion:hover .menu-desplegable, .menu-desplegable:hover .interaccion{
+    display: flex;
+
+}
+.section-uno {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    gap: 2rem;
+}
+.info {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+.h1 {
+    color: var(--c1);
+    padding-top: 1rem;
+    font-size: 24px;
+    margin: 0;
+}
+.mundo {
+    width: 100%;
+}
+.ver-planes {
+    color: var(--c2);
+    background-color: var(--c1);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0.6rem;
+    font-size: 0.7rem;
+    
+}
+.section-uno__p{ 
+    font-size: 0.7rem;
+}
+.section-dos{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c1);
+    padding: 10px 1rem 3rem;
+    gap: 1rem;
+}
+
+.h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0;
+    color: var(--c2);
+    padding: 4rem 0;
+    text-align: center;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--c2);
+    border-radius: 1rem;
+    gap: 1rem;
+    max-height: 400px;
+    padding: 2rem 1rem;
+}
+.icono{
+    width: 50px;
+    height: 50px;
+}
+.contenido{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.ver-mas{
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    gap: 0.5rem;
+}
+.center{
+    padding-top: 5rem;
+    text-align: center;
+}
+.parrafo{
+    display: flex;
+    gap: 1rem;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(255, 255, 255);
+    padding: 1rem;
+    gap: 1rem;
+}
+.h4{
+    font-size: 0.6rem;
+}
+.etiqueta{
+    font-size: 0.8rem;
+    margin: 0;
+}
+.etiqueta::after{
+    content: "*";
+    color: red;
+    margin-left: 4px;
+}
+.campo{
+    margin: 0;
+
+}
+.label{
+    align-items: start;
+}
+input,
+input::placeholder {
+    font: 0.6rem/3 sans-serif;
+    padding: 0.4rem 0.2rem;
+    height: 1.8rem;
+    width: 100%;
+}
+.fila{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+.venezuela{
+    display: flex;
+    font-size: 0.6rem;
+    gap: 0.4rem;
+    align-items: center;
+}
+.venezuela span{
+    transform: rotateZ(270deg);
+    
+}
+.registrarme{
+    color: var(--c2);
+
+}
+.quitar{
+    border: none;
+}
+.consultas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.h5{
+    font-size: 1.1rem;
+}
+.linea{
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+.lineaa{
+    width: 2px;
+    height: 35%;
+    background-color: black;
+}
+.elemento{
+    display: flex;
+    height: 130px;
+    gap: 1rem;
+    
+}
+
+.medio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16px;
+    height: 100%;
+
+}
+.circulo{
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #717171;
+    border-radius: 100%;
+}
+.selector{
+    margin-left: 10px;
+}
+.tri{
+    margin-left: -5px;
+}
+.wuan{
+    margin-left: 10px;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+      
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 860px) {
+    .menu .boton{
+        display: block;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
